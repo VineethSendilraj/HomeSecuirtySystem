@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ThunderHomeSecurity</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- update the version number as needed -->
@@ -39,11 +40,11 @@
       <h1>Home Security System</h1>
       <h2>Status:</h2>
       <p id='status'>
-          Back Door:{{backdoor}}<br/>
-          Front Door & Garage Door:{{frontdoor}}<br/>
-          Basement Doors/Windows:{{basement}}<br/>
-          Living & Dining Room Windows:{{livingroom}}<br/>
-          Kitchen & Family Room Windows:{{kitchen}}
+          Back Door: {{backdoor}}<br/>
+          Front Door & Garage Door: {{frontdoor}}<br/>
+          Basement Doors/Windows: {{basement}}<br/>
+          Living & Dining Room Windows: {{livingroom}}<br/>
+          Kitchen & Family Room Windows: {{kitchen}}
 
       </p>
     </div>
@@ -104,11 +105,11 @@
         var app = new Vue({
             el: '#status',
             data: {
-              backdoor: 'loading',
-              frontdoor:'loading',
-              basement:'loading',
-              livingroom:'loading',
-              kitchen:'loading',
+              backdoor:  'Loading...',
+              frontdoor: 'Loading...',
+              basement:  'loading...',
+              livingroom:'Loading...',
+              kitchen:   'Loading...',
             },
             methods: {
               updateData: function (updatedData) {
